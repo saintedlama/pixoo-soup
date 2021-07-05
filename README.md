@@ -11,7 +11,7 @@ npm i pixoo-soup
 ```
 
 ```js
-import { display, connect, sleep } from "pixoo-soup";
+import { display, connect } from "pixoo-soup";
 
 async function displayRunningPixel(deviceAddress) {
   // Connect
