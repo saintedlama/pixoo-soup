@@ -18,13 +18,13 @@ async function displayRunningPixel(deviceAddress) {
   const connection = await connect(deviceAddress);
 
   const colors = ["000000", "00ff00"]; // array containing colors
-  
+
   for (let i=0;i<256;i++) {
     const pixels = new Array(256).fill(0); // 256 length, color index references
 
     // set the pixel at i to color 1 (00ff00)
     pixels[i] = 1;
-  
+
     // Display
     await display({ colors, pixels }, (buffer) => connection.write(buffer));
 
@@ -37,7 +37,7 @@ async function displayRunningPixel(deviceAddress) {
 }
 
 
-export function sleep(timeoutMs) {
+function sleep(timeoutMs) {
   return new Promise((resolve) => setTimeout(resolve, timeoutMs));
 }
 
