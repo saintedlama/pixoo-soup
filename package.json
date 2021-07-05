@@ -1,0 +1,19 @@
+{
+  "name": "pixoo-soup",
+  "version": "1.0.0",
+  "description": "Display a soup of pixels on your divoom pixoo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": ["pixoo", "divoom", "pixel"],
+  "repository": "saintedlama/pixoo-soup",
+  "author": "Christoph Walcher <christoph.walcher@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluetooth-serial-port": "git+https://github.com/tinyprinter/node-bluetooth-serial-port.git",
+    "debug": "^4.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
